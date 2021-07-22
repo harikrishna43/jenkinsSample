@@ -6,7 +6,7 @@ pipeline {
 				stage('Build') {
     					steps {
 							bat "nuget.exe restore JenkinsSample.sln"
-							bat "\"${tool 'MSBuild'}\" AspDotNetJenkins.sln"
+							bat "\"${tool 'MSBuild'}\" JenkinsSample.sln"
     					    bat "PowerShell.exe -ExecutionPolicy Bypass -File .\\build\\build.ps1 Release -verbose"
     					}
 				}
