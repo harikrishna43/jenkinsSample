@@ -10,7 +10,7 @@ $outputfolder = $PSScriptRoot + "\_output\"
 $outputartifacts = $PSScriptRoot +  "\_output\artifacts"
 
 
-&$nugetdir\nuget.exe restore TransgridCorpotate.sln
+&$nugetdir\nuget.exe restore JenkinsSample.sln
 
 # Identify latest version for MSBuild tool
 $path = .\vswhere\tools\vswhere.exe -latest -prerelease -products * -requires Microsoft.Component.MSBuild -property installationPath
