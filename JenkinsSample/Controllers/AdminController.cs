@@ -11,7 +11,7 @@ namespace JenkinsSample.Controllers
         // GET: Admin
         public ActionResult Index()
         {
-            x=2
+            //x=2
             return View();
         }
 
