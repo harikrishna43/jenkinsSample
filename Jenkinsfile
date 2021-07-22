@@ -5,7 +5,7 @@ pipeline {
 				
 				stage('Build') {
     					steps {
-    					    bat "\"${tool 'MSBuild'}\" JenkinsSample.sln /p:DeployOnBuild=true /p:DeployDefaultTarget=WebPublish /p:WebPublishMethod=FileSystem /p:SkipInvalidConfigurations=true /t:build /p:Configuration=Release /p:Platform=\"Any CPU\" /p:DeleteExistingFiles=True /p:publishUrl=c:\\inetpub\\wwwroot"
+    					    bat "PowerShell.exe -ExecutionPolicy Bypass -File .\build.ps1 Release -verbose	"
     					}
 				}
 			}
