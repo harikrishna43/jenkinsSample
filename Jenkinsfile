@@ -5,7 +5,7 @@ pipeline {
 				
 				stage('Build') {
     					steps {
-    					    bat "PowerShell.exe -ExecutionPolicy Bypass -File .\build.ps1 Release -verbose	"
+    					    bat "PowerShell.exe -ExecutionPolicy Bypass -File .\\build.ps1 Release -verbose	"
     					}
 				}
 			}
