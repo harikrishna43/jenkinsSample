@@ -16,6 +16,7 @@ namespace JenkinsSample.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page. Some changes to validate jenkins.";
+            this is error
 
             return View();
         }
